@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/widget0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C0C0C0"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btnConnect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/connect_string" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnConnect"
+            android:layout_alignBottom="@+id/btnConnect"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/no_connection"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_below="@+id/textView1"
+            android:text="@string/voice_result"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView9"
+            android:layout_toLeftOf="@+id/btnVoice"
+            android:layout_toRightOf="@+id/textView9"
+            android:ems="10"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="@string/voice_result_hint"
+            android:singleLine="true" >
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/btnVoice"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="#FFFFFF"
+            android:scaleType="fitCenter"
+            android:src="@drawable/speak_now"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/RelativeLayout1" >
+    <RelativeLayout
+        android:id="@+id/RelativeLayout30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical" >
+
+    <RelativeLayout 
+    android:id="@+id/onewidget1"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="#8DEEEE"
+    android:orientation="vertical" >
+	<TextView
+                android:id="@+id/textViewt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130dp"
+                android:layout_centerVertical="true"
+                android:text="环境数据"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#551A8B" />
+    
+    
+</RelativeLayout>
+            
+<RelativeLayout 
+    android:id="@+id/onewidget2"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_below="@+id/onewidget1"
+    android:background="#D1EEEE"
+    android:orientation="vertical" >
+<TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:text="@string/temperation"
+                android:textColor="@color/gray"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+    <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/textView4"
+                android:text="@string/empty"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/blue" />
+	
+</RelativeLayout>
+<RelativeLayout 
+    android:id="@+id/onewidget3"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_below="@+id/onewidget2"
+    android:background="#8DEEEE"
+    android:orientation="vertical" >
+<TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:text="@string/humidity"
+                android:textColor="@color/gray"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+	<TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/textView5"
+                android:text="@string/empty"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/blue" />	
+    
+
+</RelativeLayout>
+<RelativeLayout 
+    android:id="@+id/onewidget4"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_below="@+id/onewidget3"
+    android:background="#D1EEEE"
+    android:orientation="vertical" >
+	<TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true" 
+                android:layout_centerVertical="true"             
+                android:layout_marginLeft="30dp"
+                android:text="@string/lightIntention"
+                android:textColor="@color/gray"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+	<TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/textView6"
+                android:layout_centerVertical="true"
+                android:text="@string/empty"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/blue" /> 
+</RelativeLayout>            
+
+<RelativeLayout 
+    android:id="@+id/onewidget5"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_below="@+id/onewidget4"
+    android:background="#8DEEEE"
+    android:orientation="vertical" >
+	 <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"             
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true"
+                android:text="@string/gasIntention"
+                android:textColor="@color/gray"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+	 <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/textView7"
+                android:layout_centerVertical="true"
+                android:text="@string/empty"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/blue" />
+    
+
+</RelativeLayout>
+<RelativeLayout 
+    android:id="@+id/onewidget6"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_below="@+id/onewidget5"
+    android:background="#D1EEEE"
+    android:orientation="vertical" >
+<TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"            
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true"
+                android:text="@string/DoorsWindowsSensor"
+                android:textColor="@color/gray"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+	 <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/textView8"
+                android:layout_centerVertical="true"
+                android:text="@string/empty"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/blue" />
+	 <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/textView14"
+                android:layout_centerVertical="true"
+                android:text="@string/empty"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/blue" />
+
+</RelativeLayout>
+<RelativeLayout 
+    android:id="@+id/onewidget7"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_below="@+id/onewidget6"
+    android:background="#8DEEEE"
+    android:orientation="vertical" >
+
+	<TextView
+                android:id="@+id/textView30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true"
+                android:text="环境数据10秒刷新一次"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/blue" />
+    
+
+</RelativeLayout>
+<RelativeLayout 
+    android:id="@+id/onewidgetg1"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_below="@+id/onewidget7"
+    android:background="#D1EEEE"
+    android:orientation="vertical" >
+
+
+</RelativeLayout>
+<RelativeLayout 
+    android:id="@+id/onewidgetg2"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_below="@+id/onewidgetg1"
+    android:background="#8DEEEE"
+    android:orientation="vertical" >
+
+	<TextView
+                android:id="@+id/textViewg30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130dp"
+                android:layout_centerVertical="true"
+                android:text="蓝牙控制"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#551A8B" />
+    
+
+</RelativeLayout> 
+<RelativeLayout 
+    android:id="@+id/twowidget2"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="#D1EEEE"
+    android:layout_below="@+id/onewidgetg2"
+    android:orientation="vertical" >
+
+	<TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/gray"
+                android:text="灯"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+   <Switch
+                    android:id="@+id/switcher1"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                	android:layout_marginRight="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:textOff="@string/switch_off"
+                    android:textOn="@string/switch_on" />
+
+
+</RelativeLayout>
+<RelativeLayout 
+    android:id="@+id/twowidget3"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_below="@+id/twowidget2"
+    android:background="#8DEEEE"
+    android:orientation="vertical" >
+	<TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"              
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/gray"
+                android:text="电视"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+   <Switch
+                    android:id="@+id/switcher2"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                	android:layout_marginRight="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:textOff="@string/switch_off"
+                    android:textOn="@string/switch_on" />    
+
+</RelativeLayout>
+<RelativeLayout 
+    android:id="@+id/twowidget4"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_below="@+id/twowidget3"
+    android:background="#D1EEEE"
+    android:orientation="vertical" >
+	 <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"             
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/gray"
+                android:text="空调"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+   <Switch
+                    android:id="@+id/switcher3"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                	android:layout_marginRight="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:textOff="@string/switch_off"
+                    android:textOn="@string/switch_on" />
+</RelativeLayout>            
+
+<RelativeLayout 
+    android:id="@+id/twowidget5"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_below="@+id/twowidget4"
+    android:background="#8DEEEE"
+    android:orientation="vertical" >
+	 <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"            
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/gray"
+                android:text="热水器"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+   <Switch
+                    android:id="@+id/switcher4"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                	android:layout_marginRight="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:textOff="@string/switch_off"
+                    android:textOn="@string/switch_on" />
+
+</RelativeLayout>
+<RelativeLayout 
+    android:id="@+id/onewidgetg3"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_below="@+id/twowidget5"
+    android:background="#D1EEEE"
+    android:orientation="vertical" >
+
+
+</RelativeLayout>
+<RelativeLayout 
+    android:id="@+id/onewidgetg4"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_below="@+id/onewidgetg3"
+    android:background="#8DEEEE"
+    android:orientation="vertical" >
+
+	<TextView
+                android:id="@+id/textView30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="130dp"
+                android:layout_centerVertical="true"
+                android:text="GSM控制"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#551A8B" />
+    
+
+</RelativeLayout> 
+<RelativeLayout 
+    android:id="@+id/twowidget6"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="#D1EEEE"
+    android:layout_below="@+id/onewidgetg4"
+    android:orientation="vertical" >
+
+	<TextView
+                android:id="@+id/textViewg20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/gray"
+                android:text="灯"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/bto1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btf1"
+            android:textSize="15dp"
+            android:background="#66CD00" 
+            android:text="ON" />
+        <Button
+            android:id="@+id/btf1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:background="#C6E2FF" 
+            android:text="OFF"
+            android:textSize="15dp" />
+
+</RelativeLayout>
+<RelativeLayout 
+    android:id="@+id/twowidget7"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_below="@+id/twowidget6"
+    android:background="#8DEEEE"
+    android:orientation="vertical" >
+	<TextView
+                android:id="@+id/textViewg21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"              
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/gray"
+                android:text="电视"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/bto2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btf2"
+            android:textSize="15dp"
+            android:background="#66CD00" 
+            android:text="ON" />
+        <Button
+            android:id="@+id/btf2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:background="#C6E2FF" 
+            android:text="OFF"
+            android:textSize="15dp" />
+</RelativeLayout>
+<RelativeLayout 
+    android:id="@+id/twowidget8"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_below="@+id/twowidget7"
+    android:background="#D1EEEE"
+    android:orientation="vertical" >
+	 <TextView
+                android:id="@+id/textViewg22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"             
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/gray"
+                android:text="空调"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        <Button
+            android:id="@+id/bto3"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btf3"
+            android:textSize="15dp"
+            android:background="#66CD00" 
+            android:text="ON" />
+        <Button
+            android:id="@+id/btf3"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:background="#C6E2FF" 
+            android:text="OFF"
+            android:textSize="15dp" />
+
+</RelativeLayout>            
+
+<RelativeLayout 
+    android:id="@+id/twowidget9"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_below="@+id/twowidget8"
+    android:background="#8DEEEE"
+    android:orientation="vertical" >
+	 <TextView
+                android:id="@+id/textViewg23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"            
+                android:layout_marginLeft="30dp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/gray"
+                android:text="热水器"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        <Button
+            android:id="@+id/bto4"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btf4"
+            android:textSize="15dp"
+            android:background="#66CD00" 
+            android:text="ON" />
+        <Button
+            android:id="@+id/btf4"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:background="#C6E2FF" 
+            android:text="OFF"
+            android:textSize="15dp" />
+
+</RelativeLayout>
+<RelativeLayout 
+    android:id="@+id/onewidgetg5"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_below="@+id/twowidget9"
+    android:background="#D1EEEE"
+    android:orientation="vertical" >
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="请输入手机号"
+            android:inputType="phone"
+            android:singleLine="true" >
+        </EditText>
+
+</RelativeLayout>
+<RelativeLayout 
+    android:id="@+id/onewidgetg6"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_below="@+id/onewidgetg5"
+    android:background="#8DEEEE"
+    android:orientation="vertical" >
+    
+</RelativeLayout> 
+<RelativeLayout 
+    android:id="@+id/onewidgetg7"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_below="@+id/onewidgetg6"
+    android:background="#D1EEEE"
+    android:orientation="vertical" >
+ <TextView
+                android:id="@+id/textViewb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="180dp"
+                android:text="project version:"
+                android:textColor="@color/gray"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+	<TextView
+                android:id="@+id/textViewb2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/textViewb1"
+                android:text="2.0"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/blue" />	
+
+
+</RelativeLayout>
+<RelativeLayout 
+    android:id="@+id/onewidgetg8"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_below="@+id/onewidgetg7"
+    android:background="#8DEEEE"
+    android:orientation="vertical" >
+	<TextView
+                android:id="@+id/textViewb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="180dp"
+                android:text="design by: ljm lm"
+                android:textColor="#8968CD"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+</RelativeLayout>
+</RelativeLayout>                      
+    </ScrollView>
+
+</RelativeLayout>

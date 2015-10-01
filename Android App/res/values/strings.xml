@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="action_settings">Settings</string>
+
+    <color name="gray">#808080</color>
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+    <color name="blue">#1E90FF</color>
+    
+    <string name="app_name">Smart Controller</string>
+    <string name="empty">-</string>
+    <string name="connect_string">连接</string>
+    <string name="no_connection">未连接</string>
+    <string name="voice_result">语音命令:</string>
+    <string name="voice_result_hint">命令识别结果</string>
+    <string name="voice">Voice</string>
+    <string name="text1">家居环境</string>
+    <string name="temperation">温度: </string>
+    <string name="humidity">湿度: </string>
+    <string name="lightIntention">光强: </string>
+    <string name="gasIntention">可燃气体浓度: </string>
+    <string name="DoorsWindowsSensor">门窗传感器数据: </string>
+    <string name="text2">电器控制</string>
+    <string name="switch_on">ON</string>
+    <string name="switch_off">OFF</string>
+    <string name="app_version">app版本: 1.0</string>
+    <string name="HWversion">硬件版本:</string>
+</resources>
